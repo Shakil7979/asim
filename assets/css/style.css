@@ -1,0 +1,1204 @@
+ 
+
+html{
+	font-size: 62.5%;
+}
+body{	
+	font-size: 16px;	
+	font-size: 1.6rem; 
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul li a,a{
+	text-decoration: none;
+}
+h2{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 54px;
+	text-align: center;
+	color: #353535;
+}
+
+p{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #767676;
+}
+.btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-top: 40px;
+}
+.btn a{ 
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+	background-color: #353535;
+	color: #FFFFFF;
+	padding: 7px 17px 8px 17px;
+	display: inline-block;
+	color: #FFFFFF;
+	border-radius: 28px;
+	font-size: 16px;
+	border: 1px solid transparent;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.btn a:hover{
+	background-color: #FFFFFF;
+	color: #353535;
+	border: 1px solid #353535;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.btn a:hover i{
+	-webkit-transform: rotate(0deg);
+	        transform: rotate(0deg);
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.btn a i {
+	-webkit-transform: rotate(-55deg);
+	        transform: rotate(-55deg);
+	margin-left: 5px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.padding_section{
+	padding: 80px 0px 80px 0px;
+}
+
+
+
+
+
+
+/*======================  Start Header Area Page CSS  ======================*/
+/* header-top */
+.header_area_top{
+	background-color: #353535;
+	padding: 10px 0px;
+	text-align: right;
+}
+.header_top{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.header_top a{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	color: #FFFFFF;
+}
+.header_top_social_icon{
+	margin-left: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-right: 40px;
+}
+.header_top_social_icon a{
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	color: #353535;
+	text-align: center;
+	margin-left: 10px;
+}
+.header_top_social_icon a i{
+	font-size: 15px;
+}
+/* header-logo */
+.header_area_logo{
+	padding: 20px 0px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.header_logo a img{
+	width: 200px;
+}
+
+/* header-navbar */
+.header_area_nav{
+	background-color: #F7F7F7;
+	padding: 20px 0px;
+}
+.header_navbar ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.header_navbar ul li a {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #353535;
+	display: inline-block;
+	padding: 5px 25px;
+}
+.header_navbar ul li a:hover{
+	color: #000;
+}
+
+/*======================  End Header Area Page CSS  ======================*/
+
+
+/*======================  Start Banner Area Page CSS  ======================*/
+.banner_area_section{
+	background: url('../images/heroBanner.png') no-repeat scroll 0 0 / cover;
+	padding: 380px 0px;
+}
+.banner_download a{
+	background-color: #FFFFFF;
+	padding: 5px 17px 5px 17px;
+	display: inline-block;
+	color: #353535;
+	border-radius: 28px;
+	font-size: 16px;
+}
+.banner_download a:hover{
+	border: none;
+}
+.banner_download a i{
+	margin-left: 5px;
+}
+.banner_area_section{
+	position: relative;
+}
+.banner_download {
+	position: absolute;
+	bottom: 8%;
+	left: 2%;
+}
+.banner_call {
+	position: absolute;
+	-webkit-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+	right: -37px;
+}
+.banner_call a{
+	font-weight: 400;
+	font-size: 16px;
+	display: inline-block;
+	background-color: #353535;
+	padding: 7px 15px;
+	border-radius: 5px;
+	line-height: 25px;
+	color: #FFFFFF;
+	/* transform: rotate(-90deg); */
+}
+.banner_call a i {
+	-webkit-transform: rotate(-38deg);
+	        transform: rotate(-38deg);
+	margin-right: 5px;
+}
+
+/*======================  End Banner Area Page CSS  ======================*/
+
+
+/*====================== Start ParagraphSection One Page CSS  ======================*/
+.paragrapSectionOne p{
+	padding-top: 40px;
+}
+
+/* paragrap-section tow */
+.paragrapSectionTwo_section{
+	background-color: #F7F7F7;
+}
+.paragrapSectionTwo p{
+	padding-top: 40px;
+}
+/*======================  End ParagraphSection One Page CSS  ======================*/
+
+
+/*====================== Start Banner 2 Page CSS  ======================*/
+.bannerTwo_area_section{
+	padding-bottom: 35px;
+}
+.bannerTwo_area{
+	background: url('../images/banner2.png') no-repeat scroll 0 0 / cover;
+	padding: 225px 0px;
+}
+.download_btn a i{
+	-webkit-transform: rotate(0deg);
+	        transform: rotate(0deg);
+}
+
+/*======================  End Banner 2 Page CSS  ======================*/
+
+
+
+/*======================  Start Project Highlights Page CSS  ======================*/
+.project_highlights_area_section {
+	position: relative;
+	background: url('../images/ProjectBG.png') no-repeat scroll 0 0 / cover;
+	background-position: 56% 100%;
+	background-size: 100%;
+}
+.project_highlights_table{
+	margin-top: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.project_highlights_table table, th, td {
+	border:1px solid #767676;
+	padding:10px 9px;
+	font-size: 18px;
+  }
+  .project_highlights_table table tr td:nth-child(1){
+	width: 42px;
+	text-align: center;
+  } 
+  .project_highlights_table table tr td:nth-child(2){
+	width: 135px;
+  } 
+  .project_highlights_table table tr td:first-child img{
+	width: 20px;
+  } 
+/*======================  End Project Highlights Page CSS  ======================*/
+
+
+
+/*======================  Start Eminitis Page CSS  ======================*/
+.eminitis_area_section{
+	background-color: #353535;
+}
+.eminits_area h2{
+	color: #fff;
+}
+.eminits_item_wrapper{
+	margin-top: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.eminits_single_item a {
+	display: block;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 33px;
+	color: #FFFFFF;
+	padding-bottom: 15px;
+	position: relative;
+	padding-left: 15px;
+}
+.eminits_single_item a:after {
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	top: 15px;
+	left: 0;
+}
+.eminits_single_item li{
+	list-style-type: disc;
+	color: #fff;
+}
+
+/*======================  End Eminitis Page CSS  ======================*/
+
+
+
+
+
+/*====================== Start Map Area Page CSS  ======================*/
+.map_address h5{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #353535;
+}
+.map_location_area{
+	margin-top: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.map_location_map{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 56%;
+	        flex: 0 0 56%;
+
+}
+.map_location_img{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 42%;
+	        flex: 0 0 42%;
+}
+.map_location_map iframe{
+	width: 100%;
+	height: 410px;
+	border-radius: 8px;
+}
+.map_location_img img{
+	width: 100%;
+	height: 410px;
+}
+.map_area_section{
+	padding-bottom: 40px;
+}
+.map_btn{
+	margin-top: 100px;
+}
+
+
+
+/*====================== End Map Area Page CSS  ======================*/
+
+
+
+/*====================== Start MasterPlan Page CSS  ======================*/
+.masterPlane_area_section{
+	padding: 80px 0px;
+}
+.masterPlane_program_images a img{
+	width: 100%;
+}
+.masterPlane_single_itemList{
+	margin-top: 30px;
+}
+.masterPlane_single_itemList ol{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.list_Item_masterPlan{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 25%;
+	        flex: 0 0 25%;
+}
+.list_Item_masterPlan li a{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #353535;
+	display: inline-block;
+	padding: 3px 0px;
+}
+.mapUpdateStyle{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	        flex: 0 0 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+.list_Item_masterPlan{
+	-webkit-box-flex:0;
+	    -ms-flex:0 0 50%;
+	        flex:0 0 50%;
+	/* justify-content: space-between; */
+}
+/*====================== End MasterPlan Page CSS  ======================*/
+
+
+
+/*====================== Start Floor Plan Page CSS  ======================*/
+.floor_plan_area_section{
+	padding: 80px 0px 50px 0px;
+}
+.floor_plan_wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-column-gap: 30px;
+	   -moz-column-gap: 30px;
+	        column-gap: 30px;
+	padding-bottom: 50px;
+}
+.floor_plan_single_itam{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 32%;
+	        flex: 0 0 32%;
+	border-radius: 10px;
+}
+.floor_plan_img{
+	border: 1px solid #353535;
+	border-radius: 15px 15px 0px 0px;
+	border-bottom: none;
+	padding:40px 10px 25px 10px
+}
+.floor_plan_img a img{
+	width: 100%;
+	border-radius: 10px;
+}
+.floor_plan_cont{
+	background-color: #353535;
+	padding: 20px;
+	border-radius: 0px 0px 15px 15px;
+}
+.floor_plan_cont h5{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFFFFF;
+	padding-bottom: 15px;
+}
+.floor_plan_cont h6{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+}
+/*====================== End Floor Plan Page CSS  ======================*/
+
+
+
+/*====================== Start Lamp Price Page CSS  ======================*/
+.lamp_price_area_section{
+	background-color: #F7F7F7;
+}
+.lampPrice_table_area{
+	margin-top: 40px;
+}
+.lampPrice_table_area table tr:first-child{
+	background-color:#353535;
+}
+.lampPrice_table_area table tr th,td{
+	padding:11px 10px;
+}
+.lampPrice_table_area table tr th:nth-child(1){
+	width: 150px;
+}
+.lampPrice_table_area table tr th:nth-child(2){
+	width: 180px;
+}
+.lampPrice_table_area table tr th img,
+.lampPrice_table_area table tr td img{
+	width: 20px;
+	margin-right: 5px;
+}
+.lampPrice_table_area table tr th{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+.lampPrice_table_area table tr td{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #000000;
+	border: 1px solid #767676;
+}
+.lampPrice_table_area table tr td:nth-child(1),
+.lampPrice_table_area table tr td:nth-child(2){
+	text-align: center;
+}
+/*====================== End Lamp Price Page CSS  ======================*/
+
+
+/*====================== Start Click Here Page CSS  ======================*/
+.click_here_area_section {
+	background: url('../images/clickBG.png') no-repeat scroll 0 0 / 100% 100%;
+	background-position: 17%;
+}
+.clcik_table_area{
+	margin-top: 30px;
+}
+.clcik_table_area h4 {
+	font-weight: 400;
+	font-size: 18px;
+	color: #000000;
+	padding: 12px 10px;
+	border: 1px solid #767676;
+}
+.clcik_table_area h4:nth-child(1){
+	background-color: #353535;
+	color: #FFFFFF;
+}
+.clcik_table_area h4:nth-child(2),
+.clcik_table_area h4:nth-child(3),
+.clcik_table_area h4:nth-child(4),
+.clcik_table_area h4:nth-child(5){
+	border-top: none;
+}
+.clcik_btn a{
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/*====================== End Click Here Page CSS  ======================*/
+
+
+
+
+
+/*======================Start Specification Page CSS  ======================*/
+.specification_area_section{
+	background-color: #F7F7F7;
+}
+.specification_heading{
+	margin-bottom: 40px;
+}
+.specification_single_item{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.specification_images img{
+	width: 66px;
+}
+.specification_images h6{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	color: #000000;
+}
+.specification_cont li{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #353535;
+}
+.specification_iteam_wrapper {
+	border: 1px solid #767676;
+	margin-right: 15px;
+}
+.specification_single_item{
+	border-bottom: 1px solid #767676;
+}
+.specification_single_item:last-child{
+	border-bottom: none;
+}
+.specification_images {
+	border-right: 1px solid #767676;
+	padding: 10px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 13%;
+	        flex: 0 0 13%;
+	text-align: center;
+}
+.specification_cont{
+	padding:10px 25px;
+}
+
+.specification_form_area{
+	padding: 20px;
+	background-color: #353535;
+	border-radius: 5px;
+}
+.form_call {
+	text-align: center;
+}
+.form_call a{
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.speForm_group{
+	margin-bottom: 16px;
+}
+.speForm_group input{
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 12px 15px;
+}
+.speForm_group input::-webkit-input-placeholder{
+	font-weight: 400;
+	font-size: 16px;
+	
+	line-height: 25px;
+	color: #767676;
+}
+.speForm_group input::-moz-placeholder{
+	font-weight: 400;
+	font-size: 16px;
+	
+	line-height: 25px;
+	color: #767676;
+}
+.speForm_group input:-ms-input-placeholder{
+	font-weight: 400;
+	font-size: 16px;
+	
+	line-height: 25px;
+	color: #767676;
+}
+.speForm_group input::placeholder{
+	font-weight: 400;
+	font-size: 16px;
+	
+	line-height: 25px;
+	color: #767676;
+}
+.specification_form_area form{
+	margin-top: 25px;
+}
+.fGroupSpan{
+	text-align: center;
+}
+.speForm_group span{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.speForm_group_radio{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.speForm_group_radio .form-check{
+	margin: 0px 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.speForm_group_radio .form-check input{
+	background-color: transparent;
+	border: 1px solid #fff;
+	margin-right: 10px;
+	padding: 0;
+	outline: none;
+	width: 16px;
+}
+.speForm_group_radio .form-check-input:focus {
+	border-color: none;
+	outline: 0;
+	box-shadow: none;
+}
+.speForm_group_radio label{
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+}
+.speForm_group input[type="submit"]{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #353535;
+	padding: 10px 20px;
+	display: inline;
+	text-transform: uppercase;
+	border: none;
+	background-color: #fff;
+	border-radius: 5px;
+	width: auto;
+}
+.speForm_group_submit{
+	text-align: center;
+	margin-bottom: 0px;
+}
+/*====================== End Specification Page CSS  ======================*/
+
+
+
+
+/*======================Start Media Gallery Page CSS  ======================*/
+.media_gallery_wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-column-gap: 30px;
+	   -moz-column-gap: 30px;
+	        column-gap: 30px;
+	margin-top: 40px;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.media_gallery_single_iteam{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 23%;
+	        flex: 0 0 23%;
+	margin-bottom: 30px;
+}
+.media_gallery_single_iteam img{
+	width: 100%;
+}
+.media_gallery_area_section{
+	background-color: #F7F7F7;
+}
+/*====================== End Media Gallery Page CSS  ======================*/
+
+
+
+
+/*====================== Start About Group Page CSS  ======================*/
+.abour_group_images img{
+	width: 100%;
+}
+.about_group_cont{
+	padding-left: 15px;
+}
+.about_group_cont h2,
+.about_group_cont p{
+	text-align: left ;
+}
+.about_group_cont p{
+	padding-top: 30px;
+}
+.about_group_btn {
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+/*====================== End About Group Page CSS  ======================*/
+
+
+
+/*====================== Srart FAQ Accourdion Page CSS  ======================*/
+.faq_accourdion_area_section{
+	background-color: #F7F7F7;
+}
+.faq_accourdion_area {
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
+}
+.faq_accourdion_wrapper{
+	margin-top: 40px;
+}
+.faq_accourdion_wrapper .accordion-button{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #767676;
+	border: none !important;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.faq_accourdion_wrapper .accordion-button:not(.collapsed) {
+	color: #FFFFFF;
+	background-color: #353535;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 3px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.faq_accourdion_wrapper .accordion-body{
+	background-color: #F7F7F7;
+}
+.faq_accourdion_wrapper .accordion-body p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #767676;
+	text-align: left;
+	padding-bottom: 15px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	
+}
+.faq_accourdion_wrapper .accordion-button:focus {
+	border-color: none;
+	box-shadow:none;
+}
+.faq_accourdion_wrapper .accordion-item {
+	border: none;
+	margin-bottom: 7px;
+}
+.faq_accourdion_wrapper .accordion-button{
+	padding: 14px 10px;
+}
+.faq_accourdion_wrapper .accordion-button:not(.collapsed):after {
+	background-image: url('../images/ad.png');
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	background-size:px;
+}
+/*====================== End FAQ Accourdion Page CSS  ======================*/
+
+
+
+/*====================== Start Our Bog Post Page CSS  ======================*/
+.ourBlog_post_wrapper{
+	margin-top: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-column-gap: 30px;
+	   -moz-column-gap: 30px;
+	        column-gap: 30px;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.blogPost_single_item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 23%;
+	        flex: 0 0 23%;
+	margin-bottom: 30px;
+}
+.blogPost_images img{
+	width: 100%;
+}
+.blogPost_cont h3{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #353535;
+	padding: 10px 0px;
+}
+.blogPost_btn{
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	margin-top: 0px;
+	padding: 0;
+}
+.blogPost_btn a{
+	background-color: transparent;
+	color: #353535;
+	padding: 0;
+	border: none;
+	font-weight: 600;
+}
+.blogPost_btn a:hover{
+	border: none;
+}
+/*====================== End Our Bog Post Page CSS  ======================*/
+
+
+
+
+
+
+/*====================== Start Cantact Page CSS  ======================*/
+.contact_area_section{
+	background: url('../images/cBG.png') no-repeat scroll 0 0 / 100% 100%;
+	background-position: 22%;
+}
+.contact_area {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding-left: 80px;
+}
+.contact_content {
+	max-width: 520px;
+	width: 100%;
+	text-align: left;
+}
+.contact_content h2{
+	text-align: left;
+}
+.contact_content p{
+	padding-top: 15px;
+	text-align: left;
+}
+.contact_content,
+.contact_form_area{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	        flex: 0 0 50%;
+}
+.contact_form{
+	padding: 20px;
+	background-color: #353535;
+	border-radius: 10px;
+	max-width: 420px;
+	width: 100%;
+}
+.contact_form_call{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.contact_form_call p{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+.contact_form_call{
+	margin-bottom: 15px;
+}
+.contact_form_group{
+	margin-bottom: 16px;
+}
+.contact_form_group label,
+.contact_double_input label{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #FFFFFF;
+	padding-bottom: 5px;
+}
+.contact_form_group input{
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	padding: 10px 10px;
+	border-radius: 5px;
+}
+.contact_form_group input::-webkit-input-placeholder{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #767676;
+}
+.contact_form_group input::-moz-placeholder{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #767676;
+}
+.contact_form_group input:-ms-input-placeholder{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #767676;
+}
+.contact_form_group input::placeholder{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #767676;
+}
+.contact_double_input .contact_form_group{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-column-gap: 10px;
+	   -moz-column-gap: 10px;
+	        column-gap: 10px;
+}
+.contact_form_group input[type="date"],
+.contact_form_group input[type="time"]{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #767676;
+}
+.copy_information_onContact .fGroupSpan{
+	text-align: left;
+}
+.copy_information_onContact .speForm_group_radio{
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+.copy_information_onContact .speForm_group_submit{
+	text-align: left;
+}
+.contact_form_area {
+	padding-left: 100px;
+}
+.contact_content {
+	padding: 160px 0px 0px 0px;
+}
+/*====================== End Cantact Page CSS  ======================*/
+
+
+
+
+
+/*======================Start Footer Page CSS  ======================*/
+.footer_area_cont h5{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #000000;
+	padding-bottom: 5px;
+}
+.footer_area_cont h5:nth-child(6){
+	padding: 15px 0px;
+}
+.footer_area_cont p {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	color: #767676;
+	text-align: left;
+	padding-right: 50px;
+}
+
+
+.footer_area_social{
+	padding-left: 175px;
+	padding-top: 90px;
+}
+.footer_icon{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-bottom: 15px;
+}
+.footer_icon img{
+	width: 36px;
+	margin-right: 15px;
+}
+.footer_area_social p{
+	text-align: left;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #000000;
+	padding-bottom: 15px;
+}
+/* footer-bottom */
+.footer_bottom{
+	background-color: #353535;
+	padding: 10px 0px;
+}
+.footer_bottom_area{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.footer_bottom_area p,
+.footer_bottom_area a{ 
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+/*====================== End Footer Page CSS  ======================*/
+
+
+
+
+.blog_footer{
+	padding-top: 50px;
+}
+.aboutUs_area{
+	margin-top: 40px;
+}
+.aboutUs_area p{
+	margin-bottom: 40px;
+}
+
+.privacy_policy{
+	text-align: left;
+}
+.privacy_policy h2{
+	margin-bottom: 40px;
+}
+.singli_policy_item p{
+	
+}
+.singli_policy_item p{
+	text-align: left;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: #353535;
+	margin-bottom: 30px;
+}
+.singli_policy_item h3{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 27px;
+	color: #353535;
+	margin-bottom: 30px;
+}
+.single_policy_list{
+	margin-bottom: 30px;
+	padding-left: 35px;
+}
+.single_policy_list li{
+	text-align: left;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: #353535;
+}
+
+.mobile_bars{
+	display: none;
+}
