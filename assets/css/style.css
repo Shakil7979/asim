@@ -273,7 +273,7 @@ p{
 /*======================  Start Project Highlights Page CSS  ======================*/
 .project_highlights_area_section {
 	position: relative;
-	background: url('../images/ProjectBG.png') no-repeat scroll 0 0 / cover;
+	background: url('../images/ProjectBG.png') no-repeat scroll 0 0 / 100% 100%;
 	background-position: 56% 100%;
 	background-size: 100%;
 }
