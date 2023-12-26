@@ -9,6 +9,45 @@
 }
 @media all and (max-width: 1399px){
     /* header-css start */
+    .header_navbar ul li a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* header-css end */
+
+}
+
+@media all and (max-width: 1199px){
+    /* gallery */
+    .media_gallery_single_iteam {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 31%;
+                flex: 0 0 31%;
+    }
+    .media_gallery_wrapper {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    /* contact */
+    .contact_area {
+        padding-left: 0px;
+    }
+    .ourBlog_post_wrapper {
+        column-gap: 25px;
+    }   
+
+
+
+
+}
+@media all and (max-width: 1024px){
+    .header_navbar ul li a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
     .header_navbar_area {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -24,11 +63,23 @@
     }
     .header_area_nav {
         position: absolute;
-        left: 0;
-        right: 0;
-        top: 70px;
+        /* left: 0;
+        right: 0; */
+        top: 73px;
         z-index: 99;
-        display: none;
+        /* display: none; */
+    }
+    .header_area_nav.sideShow_menu {
+        right: -100%;
+        max-width: 320px;
+        width: 100%;
+        transition: .3s;
+    }
+    .header_area_nav{
+        right: 0;
+        max-width: 320px;
+        width: 100%;
+        transition: .3s;
     }
     .header_navbar ul {
         -webkit-box-orient: vertical;
@@ -71,31 +122,8 @@
     .header_top_social_icon {
         margin-right: 30px;
     }
-    /* header-css end */
-
 }
 
-@media all and (max-width: 1199px){
-    /* gallery */
-    .media_gallery_single_iteam {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 31%;
-                flex: 0 0 31%;
-    }
-    .media_gallery_wrapper {
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-    }
-    /* contact */
-    .contact_area {
-        padding-left: 0px;
-    }
-    .ourBlog_post_wrapper {
-        column-gap: 25px;
-    }
-
-}
 
 @media all and (max-width: 991px){
 	.header_logo a img {
@@ -555,6 +583,11 @@
                 justify-content: center;
     }
 
+    /* form-popup */
+    .download_popup_form h2 {
+        font-size: 20px;
+    }
+
 }
 
 @media all and (max-width: 450px){
@@ -618,3 +651,10 @@
         font-size: 14px;
     }
 }
+
+
+
+
+
+
+

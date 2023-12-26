@@ -3,12 +3,18 @@
 html{
 	font-size: 62.5%;
 }
+html{
+	scroll-behavior: smooth;
+	/* scroll-padding-top: 120px; */
+}
 body{	
 	font-size: 16px;	
 	font-size: 1.6rem; 
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 }
+
+
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	padding: 0;
@@ -60,13 +66,13 @@ p{
 	-webkit-transition: .3s;
 	transition: .3s;
 }
-.btn a:hover{
+/* .btn a:hover{
 	background-color: #FFFFFF;
 	color: #353535;
 	border: 1px solid #353535;
 	-webkit-transition: .3s;
 	transition: .3s;
-}
+} */
 .btn a:hover i{
 	-webkit-transform: rotate(0deg);
 	        transform: rotate(0deg);
@@ -249,6 +255,10 @@ p{
 }
 .paragrapSectionTwo p{
 	padding-top: 40px;
+}
+.readMore_paragrap p{
+	margin-top: 15px;
+	display: none;
 }
 /*======================  End ParagraphSection One Page CSS  ======================*/
 
@@ -784,8 +794,14 @@ p{
 	        flex: 0 0 23%;
 	margin-bottom: 30px;
 }
-.media_gallery_single_iteam img{
+.media_gallery_single_iteam a img{
 	width: 100%;
+	transition: .3s;
+	
+}
+.media_gallery_single_iteam a:hover img{
+	transform: scale(1.1); 
+	transition: .3s;
 }
 .media_gallery_area_section{
 	background-color: #F7F7F7;
@@ -1201,4 +1217,165 @@ p{
 
 .mobile_bars{
 	display: none;
+}
+
+
+
+
+
+
+
+
+.dowload_hide_form,
+.dowload_hide_form2{
+	display: none;
+}
+
+.download_popup_form{
+	max-width: 420px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 25px;
+	margin: auto;
+	border: 1px solid #ddd;
+}
+.download_popup_form h2{
+	font-size: 22px;
+	padding: 5px 0px 15px 0px;
+}
+.download_form_group{
+	margin-bottom: 20px;
+}
+.download_form_group input[type="text"],
+.download_form_group input[type="email"]{
+	width: 100%;
+	background-color: #F7F7F7;
+	outline: none;
+	border: none;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 4px 0px #76767645;
+}
+.download_form_group input::placeholder{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #767676;
+	
+}
+.download_form_group.form-check label{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #767676;
+}
+.form-check-input[type="checkbox"] {
+	border-radius: .25em;
+	/* background: #F7F7F7; */
+	z-index: -1;
+}
+.download_form_group.form-check .form-check-input:focus {
+	border-color: none !important;
+	outline: 0;
+	box-shadow: transparent !important;
+}
+.form-check-input:checked {
+	background-color: #353535;
+	border-color: #353535;
+}
+.download_submit_btn input {
+	background-color: #353535 !important;
+	color: #ffffff !important;
+	padding: 12px 20px !important;
+}
+
+.download_form_group .form-check label{
+	color: #353535;
+}
+.download_form_group .form-check input{
+	color: #353535;
+}
+.download_form_group .form-check input {
+	background-color: transparent;
+	border: 1px solid #767676;
+	margin-right: 10px;
+	padding: 0;
+	outline: none;
+	width: 16px;
+}
+.download_form_group .form-check-input:checked[type="radio"] {
+	width: 15px;
+	height: 15px;
+	background-color: #767676;
+	border-radius: 50%;
+}
+.download_form_group span{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #767676;
+	text-align: left;
+}
+.downloadSpan{
+	text-align: left;
+}
+.download_form_group2 input[type="submit"]{
+	background-color: #353535;
+	color: #fff;
+}
+#toggle_download_btn_ID2 h2{
+	text-align: left;
+	line-height: 30px;
+}
+.download_call{
+	padding: 8px 10px;
+	background-color: #353535;
+	margin: 20px 0px;
+}
+.download_call p{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+
+
+
+.floowPlanPopup {
+	cursor: zoom-in;
+}
+
+.custom-controls {
+	position: absolute;
+	top: 41px;
+	right: 13px;
+	display: flex;
+	flex-direction: column;
+	z-index: 9999;
+	display: flex;
+	/* flex-direction: column; */
+}
+
+.custom-controls span {
+	cursor: pointer;
+	margin-bottom: 10px;
+	color: #ddd;
+	font-size: 20px; /* Adjust the font size as needed */
+}
+
+.mfp-container {
+	overflow: hidden;
+}
+
+.mfp-with-zoom img {
+	transition: transform 0.5s ease-in-out;
+	transform-origin: center center;
+}
+
+.ui-draggable-dragging {
+	cursor: move;
 }

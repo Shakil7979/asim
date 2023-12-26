@@ -19,6 +19,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
         <!-- Normalize -->
         <link rel="stylesheet" href="assets/css/normalize.css">
+        
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
         <!-- google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
         <!-- CSS Files -->
@@ -29,7 +32,7 @@
 
         
         <!--=====================  Start Header Area  ====================-->
-        <header class="header_area_section">
+        <header class="header_area_section" id="home">
             <div class="header_area_top">
                 <div class="container-fluid">
                     <div class="row">
@@ -51,23 +54,23 @@
                         <a href="index.html"><img src="assets/images/indexLogo.png" alt="logo"></a>
                     </div>
                 </div>
-                <div class="header_area_nav">
+                <div class="header_area_nav sideShow_menu">
                     <div class="header_navbar">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#home">Home</a></li>
                             <li><a href="#">Overview</a></li>
-                            <li><a href="#">Project</a></li>
-                            <li><a href="#">Amenities</a></li>
-                            <li><a href="#">Location</a></li>
-                            <li><a href="#">Master Plan</a></li>
-                            <li><a href="#">Floor Plan</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Specifications</a></li>
-                            <li><a href="#">Media</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Faqs</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#project">Project</a></li>
+                            <li><a href="#amenities">Amenities</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#masterplan">Master Plan</a></li>
+                            <li><a href="#floorPlan">Floor Plan</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#specifications">Specifications</a></li>
+                            <li><a href="#media">Media</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#faqs">Faqs</a></li>
+                            <li><a href="#blogs">Blogs</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -85,7 +88,7 @@
             <section class="banner_area_section">
                 <div class="banner_area">
                     <div class="banner_download  download_btn">
-                        <a href="#">Brochure Download <i class="fa-solid fa-download"></i></a>
+                        <a class="toggle_download_btn" href="#toggle_download_btn_ID">Brochure Download <i class="fa-solid fa-download"></i></a>
                     </div>
                     <div class="banner_call">
                         <a href="#"> <i class="fa-solid fa-phone-volume"></i> Enquire </a>
@@ -94,6 +97,80 @@
                 </div>
             </section>
             <!--=====================  End Banner Area  ====================--> 
+
+
+            <!--=====================  Start Extra Popup Form Area  ====================--> 
+            <div class="dowload_hide_form">
+                <div id="toggle_download_btn_ID" class="download_popup_form white-popup-block mfp-hid">
+                    <h2>Enquire</h2>
+                    <form action="">
+                        <div class="download_form_group">
+                            <input type="text"dname="dname" id="dname" placeholder="Your Name">
+                        </div>
+                        <div class="download_form_group">
+                            <input type="text" name="dnumver" id="dnumver" placeholder="Your Phone Number">
+                        </div>
+                        <div class="download_form_group">
+                            <input type="text" name="demail" id="demail" placeholder="Your Email Address">
+                        </div>
+                        <div class="download_form_group form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                I Agree to the Terms & Conditions
+                            </label>
+                        </div>
+                        <div class="speForm_group speForm_group_submit download_submit_btn">
+                            <input type="submit" value="SUBMIT ENQUIRY">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="dowload_hide_form2">
+                <div id="toggle_download_btn_ID2" class="download_popup_form white-popup-block mfp-hid">
+                    <h2>GET THE COMPLETECOSTING DETAILS NOW!</h2>
+                    <div class="download_call">
+                        <p>Call : 1234567890</p>
+                    </div>
+                    <form action="">
+                        <div class="download_form_group">
+                            <input type="text"dname="dname" id="dname" placeholder="Your Name">
+                        </div>
+                        <div class="download_form_group">
+                            <input type="text" name="dnumver" id="dnumver" placeholder="Your Phone Number">
+                        </div>
+                        <div class="download_form_group">
+                            <input type="text" name="demail" id="demail" placeholder="Your Email Address">
+                        </div>
+                        <div class="download_form_group">
+                            <input type="text" name="req" id="req" placeholder="Please tell us your requirement">
+                        </div>
+
+                        <div class="speForm_group fGroupSpan download_form_group downloadSpan">
+                            <span>Do you  require HOME LOAN assistance ?*</span>
+                        </div>
+                        <div class="speForm_group speForm_group_radio download_form_group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                Yes
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="speForm_group speForm_group_submit download_form_group2">
+                            <input type="submit" value="SUBMIT ENQUIRY">
+                        </div>
+                    </form>
+                </div>
+            </div>
+             <!--=====================  End Extra Popup Form Area  ====================--> 
+
 
 
             <!--===================== Start single-paragrap-section paragrapSectionOne  ====================--> 
@@ -144,9 +221,30 @@
                                      Lamps offers you the best of both worlds, seamlessly marrying contemporary 
                                      living with Bangalore's old-world charm. The dedicated team at Godrej ensures 
                                      impeccable attention to detail, from architecture to finishing touches, 
-                                    promising unmatched quality. Godrej Budigere, hence, successfully</p>
+                                    promising unmatched quality. Godrej Budigere, hence, successfully
+                                </p>
+                                <div class="readMore_paragrap read_more1">
+                                    <p>Welcome to a world of luxury and prestige at the heart of East Bangalore. 
+                                        We introduce you to Godrej Bengal Lamps Budigere Cross, 
+                                        an exquisite residential project that aims to redefine architectural excellence. 
+                                        This new launch by the Godrej group ensures that the tag of luxury and elegance foregrounds the 
+                                        essence of the Godrej Bengal Lamps Project. The prominence of Godrej as a 
+                                        leading developer adds an extra layer of confidence and credibility to the project. 
+                                        Located in the bustling neighborhood of Budigere Cross, this residential project is a 
+                                        carefully curated blend of nature's tranquillity and urban convenience. 
+                                        It promises its residents the exceptional pedigree of Godrej Bengal, 
+                                        enhanced by its stellar location. The location of Godrej Bengal Lamps 
+                                        Budigere Cross is strategically chosen to provide easy access to premier educational institutions,
+                                         world-class healthcare facilities, and retail and recreational hubs, 
+                                         making it a preferred choice for home buyers. A taste of Godrej Bengal 
+                                         Lamps offers you the best of both worlds, seamlessly marrying contemporary 
+                                         living with Bangalore's old-world charm. The dedicated team at Godrej ensures 
+                                         impeccable attention to detail, from architecture to finishing touches, 
+                                        promising unmatched quality. Godrej Budigere, hence, successfully
+                                    </p>
+                                </div>
 
-                            <div class="paragrapSectionTwo_btn btn">
+                            <div class="paragrapSectionTwo_btn btn read_more_btn1">
                                 <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                             </div>
@@ -164,7 +262,7 @@
 
                 </div>
                 <div class="bannerTow_btn btn download_btn">
-                    <a href="#">Brochure Download <i class="fa-solid fa-download"></i></a>
+                    <a class="toggle_download_btn" href="#toggle_download_btn_ID">Brochure Download <i class="fa-solid fa-download"></i></a>
                 </div>
             </section>
             <!--===================== End Banner Second Section  ====================--> 
@@ -182,8 +280,29 @@
                                     and promise of superior living standards, this beacon of excellence is worth noting.
                                      Not your average apartment complex, Godrej Bengal offers more - 
                                      a definitive style with cutting-edge amenities. With roots steeped in innovation and sustainable living, 
-                                    these apartments serve as a testament to Bangalore's future of residential real estate.</p>
-                            <div class="paragrapSectionTwo_btn btn">
+                                    these apartments serve as a testament to Bangalore's future of residential real estate.
+                                </p>
+                                <div class="readMore_paragrap read_more2">
+                                    <p>Welcome to a world of luxury and prestige at the heart of East Bangalore. 
+                                        We introduce you to Godrej Bengal Lamps Budigere Cross, 
+                                        an exquisite residential project that aims to redefine architectural excellence. 
+                                        This new launch by the Godrej group ensures that the tag of luxury and elegance foregrounds the 
+                                        essence of the Godrej Bengal Lamps Project. The prominence of Godrej as a 
+                                        leading developer adds an extra layer of confidence and credibility to the project. 
+                                        Located in the bustling neighborhood of Budigere Cross, this residential project is a 
+                                        carefully curated blend of nature's tranquillity and urban convenience. 
+                                        It promises its residents the exceptional pedigree of Godrej Bengal, 
+                                        enhanced by its stellar location. The location of Godrej Bengal Lamps 
+                                        Budigere Cross is strategically chosen to provide easy access to premier educational institutions,
+                                         world-class healthcare facilities, and retail and recreational hubs, 
+                                         making it a preferred choice for home buyers. A taste of Godrej Bengal 
+                                         Lamps offers you the best of both worlds, seamlessly marrying contemporary 
+                                         living with Bangalore's old-world charm. The dedicated team at Godrej ensures 
+                                         impeccable attention to detail, from architecture to finishing touches, 
+                                        promising unmatched quality. Godrej Budigere, hence, successfully
+                                    </p>
+                                </div>
+                            <div class="paragrapSectionTwo_btn btn read_more_btn2">
                                 <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                             </div>
@@ -196,7 +315,7 @@
 
 
             <!--===================== Start Project Highlights Section  ====================--> 
-            <section class="project_highlights_area_section padding_section">
+            <section class="project_highlights_area_section padding_section" id="project">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -270,7 +389,7 @@
                                     </table>
                                 </div>
                                 <div class="table_btn btn download_btn">
-                                    <a href="#">Brochure Download <i class="fa-solid fa-download"></i></a>
+                                    <a class="toggle_download_btn" href="#toggle_download_btn_ID">Brochure Download <i class="fa-solid fa-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +402,7 @@
 
 
             <!--===================== Start Emenitis Section  ====================--> 
-            <section class="eminitis_area_section padding_section">
+            <section class="eminitis_area_section padding_section" id="amenities">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -340,8 +459,29 @@
                                     to connect its residents with the essential hubs seamlessly. Unarguably, 
                                     a strategic location and integrality to key areas form the backbone of any notable property, 
                                     and this principle is thoroughly embodied in Godrej Bengal Lamps. 
-                                    The unbeatable location of Godrej Bengal Lamps</p>
-                            <div class="paragrapSectionTwo_btn btn">
+                                    The unbeatable location of Godrej Bengal Lamps
+                                </p>
+                                <div class="readMore_paragrap read_more3">
+                                    <p>Welcome to a world of luxury and prestige at the heart of East Bangalore. 
+                                        We introduce you to Godrej Bengal Lamps Budigere Cross, 
+                                        an exquisite residential project that aims to redefine architectural excellence. 
+                                        This new launch by the Godrej group ensures that the tag of luxury and elegance foregrounds the 
+                                        essence of the Godrej Bengal Lamps Project. The prominence of Godrej as a 
+                                        leading developer adds an extra layer of confidence and credibility to the project. 
+                                        Located in the bustling neighborhood of Budigere Cross, this residential project is a 
+                                        carefully curated blend of nature's tranquillity and urban convenience. 
+                                        It promises its residents the exceptional pedigree of Godrej Bengal, 
+                                        enhanced by its stellar location. The location of Godrej Bengal Lamps 
+                                        Budigere Cross is strategically chosen to provide easy access to premier educational institutions,
+                                         world-class healthcare facilities, and retail and recreational hubs, 
+                                         making it a preferred choice for home buyers. A taste of Godrej Bengal 
+                                         Lamps offers you the best of both worlds, seamlessly marrying contemporary 
+                                         living with Bangalore's old-world charm. The dedicated team at Godrej ensures 
+                                         impeccable attention to detail, from architecture to finishing touches, 
+                                        promising unmatched quality. Godrej Budigere, hence, successfully
+                                    </p>
+                                </div>
+                            <div class="paragrapSectionTwo_btn btn read_more_btn3">
                                 <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                             </div>
@@ -354,7 +494,7 @@
 
 
             <!--===================== Start Map Area Section  ====================--> 
-            <section class="map_area_section padding_section">
+            <section class="map_area_section padding_section" id="location">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -372,8 +512,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="map_btn btn download_btn">
+                            <!-- <div class="map_btn btn download_btn">
                                 <a href="#">Request a Brochure <i class="fa-solid fa-download"></i></a>
+                            </div> -->
+                            <div class="map_btn btn  download_btn">
+                                <a class="toggle_download_btn" href="#toggle_download_btn_ID">Request a Brochure <i class="fa-solid fa-download"></i></a>
                             </div>
                         </div>
                     </div>
@@ -397,8 +540,29 @@
                                     Prioritizing thoughtful design, we ensure our master plan includes ample space for both 
                                     professionals and children to enjoy. The floor plans, well, they are nothing short 
                                     of spectacular. Offering an appealing mix of 1BHK, 2BHK, and 3BHK units; 
-                                    Godrej Bengal Lamps caters to a wide array of housing needs. The floor plans are</p>
-                            <div class="paragrapSectionTwo_btn btn">
+                                    Godrej Bengal Lamps caters to a wide array of housing needs. The floor plans are
+                                </p>
+                                <div class="readMore_paragrap read_more4">
+                                    <p>Welcome to a world of luxury and prestige at the heart of East Bangalore. 
+                                        We introduce you to Godrej Bengal Lamps Budigere Cross, 
+                                        an exquisite residential project that aims to redefine architectural excellence. 
+                                        This new launch by the Godrej group ensures that the tag of luxury and elegance foregrounds the 
+                                        essence of the Godrej Bengal Lamps Project. The prominence of Godrej as a 
+                                        leading developer adds an extra layer of confidence and credibility to the project. 
+                                        Located in the bustling neighborhood of Budigere Cross, this residential project is a 
+                                        carefully curated blend of nature's tranquillity and urban convenience. 
+                                        It promises its residents the exceptional pedigree of Godrej Bengal, 
+                                        enhanced by its stellar location. The location of Godrej Bengal Lamps 
+                                        Budigere Cross is strategically chosen to provide easy access to premier educational institutions,
+                                         world-class healthcare facilities, and retail and recreational hubs, 
+                                         making it a preferred choice for home buyers. A taste of Godrej Bengal 
+                                         Lamps offers you the best of both worlds, seamlessly marrying contemporary 
+                                         living with Bangalore's old-world charm. The dedicated team at Godrej ensures 
+                                         impeccable attention to detail, from architecture to finishing touches, 
+                                        promising unmatched quality. Godrej Budigere, hence, successfully
+                                    </p>
+                                </div>
+                            <div class="paragrapSectionTwo_btn btn read_more_btn4">
                                 <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                             </div>
@@ -410,13 +574,15 @@
 
 
             <!--===================== Start MasterPlan Section  ====================--> 
-            <section class="masterPlane_area_section">
+            <section class="masterPlane_area_section" id="masterplan">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="masterPlan_area">
                                 <div class="masterPlane_program_images">
-                                    <a class="floowPlanPopup" href="assets/images/masterPlanePopUp.png"><img src="assets/images/masterplan.png" alt="masterplan images"></a>
+                                    <a class="floowPlanPopup" href="assets/images/masterPlanePopUp.png">
+                                        <img src="assets/images/masterplan.png" alt="masterplan images">
+                                    </a>
                                 </div>
                                 <div class="masterPlan_list_item">
                                     <!-- single-item -->
@@ -463,7 +629,7 @@
                                     </div>
                                 </div>
                                 <div class="masterPlan_btn btn download_btn">
-                                    <a href="#">Download Master Plan <i class="fa-solid fa-download"></i></a>
+                                    <a class="toggle_download_btn" href="#toggle_download_btn_ID">Download Master Plan<i class="fa-solid fa-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -484,10 +650,32 @@
                                     In terms of floor plans, Godrej Bengal Lamps offers a variety that caters to every homebuyer's desires.
                                      The units range from 1, 2, to 3 BHK apartments, each thoughtfully designed to maximize space, 
                                      comfort, and functionality. The captivating layout 
-                                    leaves an indelible impression on all who have the chance to view the floor plans. </p>
-                                <div class="paragrapSectionTwo_btn btn">
-                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                    leaves an indelible impression on all who have the chance to view the floor plans. 
+                                </p>
+
+                                <div class="readMore_paragrap read_more5">
+                                    <p>Welcome to a world of luxury and prestige at the heart of East Bangalore. 
+                                        We introduce you to Godrej Bengal Lamps Budigere Cross, 
+                                        an exquisite residential project that aims to redefine architectural excellence. 
+                                        This new launch by the Godrej group ensures that the tag of luxury and elegance foregrounds the 
+                                        essence of the Godrej Bengal Lamps Project. The prominence of Godrej as a 
+                                        leading developer adds an extra layer of confidence and credibility to the project. 
+                                        Located in the bustling neighborhood of Budigere Cross, this residential project is a 
+                                        carefully curated blend of nature's tranquillity and urban convenience. 
+                                        It promises its residents the exceptional pedigree of Godrej Bengal, 
+                                        enhanced by its stellar location. The location of Godrej Bengal Lamps 
+                                        Budigere Cross is strategically chosen to provide easy access to premier educational institutions,
+                                         world-class healthcare facilities, and retail and recreational hubs, 
+                                         making it a preferred choice for home buyers. A taste of Godrej Bengal 
+                                         Lamps offers you the best of both worlds, seamlessly marrying contemporary 
+                                         living with Bangalore's old-world charm. The dedicated team at Godrej ensures 
+                                         impeccable attention to detail, from architecture to finishing touches, 
+                                        promising unmatched quality. Godrej Budigere, hence, successfully
+                                    </p>
                                 </div>
+                            <div class="paragrapSectionTwo_btn btn read_more_btn5">
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -497,7 +685,7 @@
 
 
             <!--===================== Start Floor Plan Section  ====================-->
-            <section class="floor_plan_area_section">
+            <section class="floor_plan_area_section" id="floorPlan">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -521,7 +709,7 @@
                                             <a class="floowPlanPopup" href="assets/images/planePopUp2.png"> <img src="assets/images/fp2.png" alt="floor plan images"></a>
                                         </div>
                                         <div class="floor_plan_cont">
-                                            <h5>2BHK</h5>
+                                            <h5>3BHK</h5>
                                             <h6>SBA: 1154 Sq. Ft / 107.18 Sq.</h6>
                                             <h6>MCarpet Area: 773 Sq. Ft / 71.84 Sq.</h6>
                                             <h6>Balcony Area: 48 Sq. Ft / 4.48 Sq.</h6>
@@ -533,7 +721,7 @@
                                             <a class="floowPlanPopup" href="assets/images/planePopUp3.png"> <img src="assets/images/fp3.png" alt="floor plan images"></a>
                                         </div>
                                         <div class="floor_plan_cont">
-                                            <h5>2BHK</h5>
+                                            <h5>4BHK</h5>
                                             <h6>SBA: 1154 Sq. Ft / 107.18 Sq.</h6>
                                             <h6>MCarpet Area: 773 Sq. Ft / 71.84 Sq.</h6>
                                             <h6>Balcony Area: 48 Sq. Ft / 4.48 Sq.</h6>
@@ -541,7 +729,7 @@
                                     </div>
                                 </div>
                                 <div class="floorPlan_btn btn download_btn">
-                                    <a href="#">Download Floor Plans <i class="fa-solid fa-download"></i></a>
+                                    <a class="toggle_download_btn" href="#toggle_download_btn_ID">Download Floor Plans<i class="fa-solid fa-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -557,7 +745,7 @@
 
             <!--=====================Start Lamp Price Section  ====================-->
             <section>
-                <div class="lamp_price_area_section padding_section">
+                <div class="lamp_price_area_section padding_section" id="pricing">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -578,21 +766,21 @@
                                             <td data-label="Bath Count">2</td>
                                             <td data-label="Square Feet Range">20X20</td>
                                             <td data-label="Price Range">₹ Get Pre launch Price</td>
-                                            <td data-label="Flat Model Videos"><img src="assets/images/ph/lpV.png" alt=""> Click to View video </td>
+                                            <td data-label="Flat Model Videos"><a class="table_popup_youtube" href="https://www.youtube.com/watch?v=EngW7tLk6R8"><img src="assets/images/ph/lpV.png" alt="images"></a> Click to View video </td>
                                         </tr>
                                         <tr>
                                             <td data-label="Bed Count">3</td>
                                             <td data-label="Bath Count">2</td>
                                             <td data-label="Square Feet Range">24X24</td>
                                             <td data-label="Price Range">₹ Get Pre launch Price</td>
-                                            <td data-label="Flat Model Videos"><img src="assets/images/ph/lpV.png" alt=""> Click to View video </td>
+                                            <td data-label="Flat Model Videos"><a class="table_popup_youtube" href="https://www.youtube.com/watch?v=EngW7tLk6R8"><img src="assets/images/ph/lpV.png" alt="images"></a> Click to View video </td>
                                         </tr>
                                         <tr>
                                             <td data-label="Bed Count">4</td>
                                             <td data-label="Bath Count">3</td>
                                             <td data-label="Square Feet Range">26X26</td>
                                             <td data-label="Price Range">₹ Get Pre launch Price</td>
-                                            <td data-label="Flat Model Videos"><img src="assets/images/ph/lpV.png" alt=""> Click to View video </td>
+                                            <td data-label="Flat Model Videos"><a class="table_popup_youtube" href="https://www.youtube.com/watch?v=EngW7tLk6R8"><img src="assets/images/ph/lpV.png" alt="images"></a> Click to View video </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -626,7 +814,7 @@
                                     <h4>*Franking Charges, Stamp duty & Property Registration Charges Extra as per Govt Norms.</h4>
                                 </div>
                                 <div class="clcik_btn btn">
-                                    <a href="#">CLICK HERE FOR COMPLETE COSTING DETAILS<i class="fa-solid fa-arrow-right"></i></a>
+                                    <a class="toggle_download_btn2" href="#toggle_download_btn_ID2">CLICK HERE FOR COMPLETE COSTING DETAILS<i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -639,7 +827,7 @@
 
 
             <!--=====================Start Specification Section  ====================-->
-            <section class="specification_area_section padding_section">
+            <section class="specification_area_section padding_section" id="specifications">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -778,7 +966,7 @@
 
 
             <!--=====================Start Media Gallery Section  ====================-->
-            <section class="media_gallery_area_section padding_section">
+            <section class="media_gallery_area_section padding_section" id="media">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -787,35 +975,35 @@
                                 <div class="media_gallery_wrapper">
                                     <!-- single-item -->
                                     <div class="media_gallery_single_iteam">
-                                        <img src="assets/images/gl1.png" alt="Gallery Images">
+                                        <a class="gallery_popup" href="assets/images/gl1.png"><img src="assets/images/gl1.png" alt="Gallery Images"></a>
                                     </div>
                                     <!-- single-item -->
                                     <div class="media_gallery_single_iteam">
-                                        <img src="assets/images/gl2.png" alt="Gallery Images">
+                                        <a class="gallery_popup" href="assets/images/gl2.png"><img src="assets/images/gl2.png" alt="Gallery Images"></a>
                                     </div>
                                     <!-- single-item -->
                                     <div class="media_gallery_single_iteam">
-                                        <img src="assets/images/gl3.png" alt="Gallery Images">
+                                        <a class="gallery_popup" href="assets/images/gl3.png"><img src="assets/images/gl3.png" alt="Gallery Images"></a>
                                     </div>
                                     <!-- single-item -->
                                     <div class="media_gallery_single_iteam">
-                                        <img src="assets/images/gl4.png" alt="Gallery Images">
+                                        <a class="gallery_popup" href="assets/images/gl4.png"><img src="assets/images/gl4.png" alt="Gallery Images"></a>
                                     </div>
                                     <!-- single-item -->
                                     <div class="media_gallery_single_iteam">
-                                        <img src="assets/images/gl1.png" alt="Gallery Images">
+                                        <a class="gallery_popup" href="assets/images/gl1.png"><img src="assets/images/gl1.png" alt="Gallery Images"></a>
                                     </div>
                                     <!-- single-item -->
                                     <div class="media_gallery_single_iteam">
-                                        <img src="assets/images/gl2.png" alt="Gallery Images">
+                                        <a class="gallery_popup" href="assets/images/gl2.png"><img src="assets/images/gl2.png" alt="Gallery Images"></a>
                                     </div>
                                     <!-- single-item -->
                                     <div class="media_gallery_single_iteam">
-                                        <img src="assets/images/gl3.png" alt="Gallery Images">
+                                        <a class="gallery_popup" href="assets/images/gl3.png"><img src="assets/images/gl3.png" alt="Gallery Images"></a>
                                     </div>
                                     <!-- single-item -->
                                     <div class="media_gallery_single_iteam">
-                                        <img src="assets/images/gl4.png" alt="Gallery Images">
+                                        <a class="gallery_popup" href="assets/images/gl4.png"><img src="assets/images/gl4.png" alt="Gallery Images"></a>
                                     </div>
                                 </div>
                             </div>
@@ -829,7 +1017,7 @@
 
 
             <!--=====================Start About Group Section  ====================-->
-            <section class="abour_group_area_section padding_section">
+            <section class="abour_group_area_section padding_section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -846,9 +1034,29 @@
                                     Godrej Properties is currently developing residential, commercial, 
                                     and township projects spread across approximately 11.89 million square meters in 12 cities.
                                 </p>
-                                <div class="about_group_btn btn">
-                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                <div class="readMore_paragrap read_more6">
+                                    <p>Welcome to a world of luxury and prestige at the heart of East Bangalore. 
+                                        We introduce you to Godrej Bengal Lamps Budigere Cross, 
+                                        an exquisite residential project that aims to redefine architectural excellence. 
+                                        This new launch by the Godrej group ensures that the tag of luxury and elegance foregrounds the 
+                                        essence of the Godrej Bengal Lamps Project. The prominence of Godrej as a 
+                                        leading developer adds an extra layer of confidence and credibility to the project. 
+                                        Located in the bustling neighborhood of Budigere Cross, this residential project is a 
+                                        carefully curated blend of nature's tranquillity and urban convenience. 
+                                        It promises its residents the exceptional pedigree of Godrej Bengal, 
+                                        enhanced by its stellar location. The location of Godrej Bengal Lamps 
+                                        Budigere Cross is strategically chosen to provide easy access to premier educational institutions,
+                                         world-class healthcare facilities, and retail and recreational hubs, 
+                                         making it a preferred choice for home buyers. A taste of Godrej Bengal 
+                                         Lamps offers you the best of both worlds, seamlessly marrying contemporary 
+                                         living with Bangalore's old-world charm. The dedicated team at Godrej ensures 
+                                         impeccable attention to detail, from architecture to finishing touches, 
+                                        promising unmatched quality. Godrej Budigere, hence, successfully
+                                    </p>
                                 </div>
+                            <div class="paragrapSectionTwo_btn btn read_more_btn6">
+                                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -859,7 +1067,7 @@
 
 
             <!--=====================Srart FAQ Accourdion Section  ====================-->
-            <section class="faq_accourdion_area_section padding_section">
+            <section class="faq_accourdion_area_section padding_section" id="faqs">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -1079,7 +1287,7 @@
 
 
             <!--=====================Start Blog Section  ====================-->
-            <section class="ourBlog_area_section padding_section">
+            <section class="ourBlog_area_section padding_section" id="blogs">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -1095,7 +1303,7 @@
                                             <h3>Investing in Real Estate: Strategies for Success</h3>
                                         </div>
                                         <div class="blogPost_btn btn">
-                                            <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="blog.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- single-item -->
@@ -1107,7 +1315,7 @@
                                             <h3>The Impact of Technology on Real Estate Marketing</h3>
                                         </div>
                                         <div class="blogPost_btn btn">
-                                            <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="blog.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- single-item -->
@@ -1119,7 +1327,7 @@
                                             <h3>Navigating a Seller's Market: Tips for Home Sellers</h3>
                                         </div>
                                         <div class="blogPost_btn btn">
-                                            <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="blog.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- single-item -->
@@ -1131,12 +1339,12 @@
                                             <h3>Investing in Real Estate: Strategies for Success</h3>
                                         </div>
                                         <div class="blogPost_btn btn">
-                                            <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="blog.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ourBlogPost_btn btn">
-                                    <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a href="blog.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         <div>
@@ -1149,7 +1357,7 @@
 
 
             <!--=====================Start Contact Section  ====================-->
-            <section class="contact_area_section padding_section">
+            <section class="contact_area_section padding_section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -1254,6 +1462,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="footer_bottom">
                 <div class="container">
                     <div class="row">
@@ -1270,16 +1479,43 @@
         </footer>
         <!--=====================  End Footer Area  ====================-->
  
+        <script>
+            $('.toggle_download_btn2').magnificPopup({
+                type: 'inline',
+                preloader: false,
+                focus: '#name',
 
+                // When elemened is focused, some mobile browsers in some cases zoom in
+                // It looks not nice, so we disable it:
+                callbacks: {
+                    beforeOpen: function() {
+                        if($(window).width() < 700) {
+                            this.st.focus = false;
+                        } else {
+                            this.st.focus = '#name';
+                        }
+                    }
+                }
+            });
+        </script>
 
         <!-- ~~~~~~~~~~ JS Files ~~~~~~~~~~-->
         <!-- jQuery -->
-        <script src="assets/js/jquery.min.js"></script>
+        <!-- <script src="assets/js/jquery.min.js"></script> -->
+        
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <!-- Bootstrap -->
         <script src="assets/js/bootstrap.min.js"></script>
         <!-- Modernizr -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- <script src="assets/js/jquery.magnific-popup.min.js"></script> -->
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Include Panzoom library -->
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/4.0.0/jquery.panzoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/plugins/zoom/magnific-popup-zoom.js"></script>
         <script src="assets/js/modernizr-3.11.2.min.js"></script>
         <!-- Custom JS (Handed)-->
         <script src="assets/js/scripts.js"></script>
