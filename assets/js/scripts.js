@@ -1,15 +1,23 @@
 $(document).ready(function(){
-	// Mobile Menu
-	// $('.mobile_bars').click(function(){
-	// 	$('.header_area_nav').slideToggle(1000);
+	// header scroll
+	$(window).scroll(function(){
+        var scrollvalu=$(this).scrollTop();
+        if(scrollvalu>100){
+          $('.header_area_nav').addClass('fixedclass');
+        }else{
+           $('.header_area_nav').removeClass('fixedclass');
+        }
+       })
 
-	// 	return false
-	// });
+	
 
 
+
+	//    mobile menu side show
 	$(".mobile_bars").click(function(){
 		$(".header_area_nav").toggleClass("sideShow_menu");
 	  });
+
 
 	// readMore start
 	$('.read_more_btn1 a').click(function(){
@@ -76,8 +84,6 @@ $('.toggle_download_btn').magnificPopup({
 	preloader: false,
 	focus: '#name',
 
-	// When elemened is focused, some mobile browsers in some cases zoom in
-	// It looks not nice, so we disable it:
 	callbacks: {
 		beforeOpen: function() {
 			if($(window).width() < 700) {
@@ -94,8 +100,7 @@ $('.toggle_download_btn2').magnificPopup({
 	preloader: false,
 	focus: '#name',
 
-	// When elemened is focused, some mobile browsers in some cases zoom in
-	// It looks not nice, so we disable it:
+
 	callbacks: {
 		beforeOpen: function() {
 			if($(window).width() < 700) {
@@ -107,9 +112,7 @@ $('.toggle_download_btn2').magnificPopup({
 	}
 });
 
-// $(".download_btn").click(function(){
-//     $(".download_popup_form").toggleClass("gggg");
-//   });
+
 
 
 

@@ -15,6 +15,12 @@
     }
 
     /* header-css end */
+    .header_navbar ul { 
+        gap: 0px;
+    }
+    .single_blog_img img {
+        height: 500px;
+    }
 
 }
 
@@ -46,6 +52,9 @@
     .header_navbar ul li a {
         font-size: 14px;
         padding: 5px 10px;
+    }
+    .header_navbar ul { 
+        gap: 0;
     }
 
     .header_navbar_area {
@@ -121,6 +130,11 @@
     }
     .header_top_social_icon {
         margin-right: 30px;
+    }
+
+    .fixedclass{
+       left: inherit;
+       transition: 0.3s;
     }
 }
 
@@ -353,6 +367,10 @@
         padding-left: 0px;
     }
 
+    .single_blog_img img {
+        height: 400px;
+    }
+
     
 
 }
@@ -419,6 +437,10 @@
     }
     .single_policy_list li {
         font-size: 16px;
+    }
+
+    .single_blog_img img {
+        height: 350px;
     }
 }
 
@@ -649,6 +671,9 @@
     .footer_bottom_area p, 
     .footer_bottom_area a {
         font-size: 14px;
+    }
+    .single_blog_img img {
+        height: 260px;
     }
 }
 
